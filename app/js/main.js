@@ -1,4 +1,4 @@
-$('.dropdown-btn').click(function(e) {
+$('.dropdown-toggle').click(function(e) {
   e.preventDefault()
   var menu = $(this).next()
   if(menu.is(":hidden")){
