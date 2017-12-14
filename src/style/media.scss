@@ -34,6 +34,11 @@
 		font-size: 12px;
 		font-weight: 300;
 	}
+	.modal-title{
+		font-size: 20px;
+		margin-bottom: 20px;
+		margin-right: 10px;
+	}
 	.page-text h2{
 		font-size: 27px;
 	}
@@ -146,6 +151,19 @@
 		float: none;
 		font-size: 14px;
 	}
+	.card__descr{
+		margin-top: 25px;
+	}
+	.card__descr__title{
+		font-size: 16px;
+	}
+	.card__descr__table{
+		font-size: 12px;
+	}
+	.card__descr__links,
+	.card__descr__btn{
+		text-align: center;
+	}
 	.advantages_inner{
 		margin: 25px 0;
 	}
@@ -160,11 +178,29 @@
 			width: 100%;
 		}
 	}
+	.page-text table tbody tr:nth-child(2n) td{
+		background: #fff;
+	}
+	.btn-large{
+		width: auto;
+	}
 	.logo__descr{
 		margin-left: 0;
 		display: block;
 		font-size: 12px;
 		margin-top: 10px;
+	}
+	.feedback__info__title{
+		display: block;
+		text-align: center;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	.feedback__info__content{
+		display: block;
+	}
+	.feedback__info__item{
+		font-size: 12px;
 	}
 	.search{
 		width: 100%;
@@ -308,5 +344,13 @@
 	}
 	.btn{
 		font-size: 14px;
+	}
+	.card__img{
+		height: 200px;
+		line-height: 200px;
+
+		img{
+			max-height: 200px;
+		}
 	}
 }

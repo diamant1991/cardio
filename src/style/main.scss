@@ -235,6 +235,10 @@ img{
 		background: #fff;
 		text-transform: uppercase;
 		box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.15);
+
+		&:hover{
+			box-shadow: none;
+		}
 	}
 	&-blue{
 		color: #fff;
@@ -242,6 +246,11 @@ img{
 		text-transform: uppercase;
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
 		font-weight: normal;
+
+		&:hover{
+			background-color: #1d67b3;
+			box-shadow: none;
+		}
 	}
 	&-small{
 		padding: 8px 25px;
@@ -252,20 +261,35 @@ img{
 	  line-height: 1.7;
 		min-width: inherit;
 		text-transform: uppercase;
+
+		&_blue{
+			color: #fff;
+			box-shadow: none;
+		}
 	}
 	&-circle{
 		border-radius: 30px;
 	}
 	&-yellow{
 		background-color: #fad000;
+		color: #4a4a4a;
+		text-transform: uppercase;
 
 		&_shadow{
 			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.15);
+		}
+		&:hover{
+			 background-color: #e4bd00;
+			 box-shadow: none;
 		}
 	}
 	&-white-top{
 		background-color: #fff;
 		color: $blue;
+	}
+	&-large{
+		width: 350px;
+		text-align: center;
 	}
 }
 .catalog{
@@ -426,6 +450,14 @@ img{
 		}
 	}
 }
+.table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+.table-top{
+	display: table-cell;
+	vertical-align: top;
+}
 .tab-content > .tab-pane {
   display: none;
 }
@@ -523,6 +555,32 @@ img{
 
 	&_blue{
 		background: #ccebfe;
+	}
+
+	&__info{
+		background-color: rgba(250,208,0, 0.15);
+		padding: 20px;
+		color: #4a4a4a;
+		font-size: 16px;
+		line-height: 1.5;
+		text-align: center;
+		margin-bottom: 40px;
+
+		&__wrapp{
+			display: inline-block;
+			text-align: left;
+		}
+
+		&__item{
+			+ .feedback__info__item{
+				margin-top: 8px;
+			}
+		}
+
+		&__title{
+		  font-weight: bold;
+		  width: 200px;
+		}
 	}
 
 	&-title{
@@ -753,6 +811,12 @@ textarea.form-control{
 }
 .sidebar{
 	&__menu{
+
+		&_main{
+			display: block !important;
+			margin-bottom: 20px;
+		}
+
 		> li{
 			> a{
 				display: block;
@@ -848,6 +912,10 @@ textarea.form-control{
 						color: #fff;
 						border-color: #fff;
 					}
+					&.yellow-link{
+						background: $yellow;
+						border-color: transparent;
+					}
 				}
 				> ul{
 					a{
@@ -925,10 +993,20 @@ textarea.form-control{
 		&_no-shadow{
 			box-shadow: none;
 		}
+		&:hover{
+			box-shadow: 0 4px 6px 0 rgba(250, 208, 0, 0.5);
+		}
 
 		img{
 			vertical-align: middle;
 			max-height: 200px;
+		}
+	}
+	&_blue{
+		.product__img{
+			&:hover{
+				box-shadow: 0 4px 6px 0 rgba(0, 154, 249, 0.5);
+			}
 		}
 	}
 	&__name{
@@ -956,6 +1034,38 @@ textarea.form-control{
 	}
 }
 .page-text{
+	table{
+		margin-bottom: 35px;
+		width: 100%;
+
+		thead{
+			td{
+				font-size: 14px;
+			  font-weight: 500;
+			  line-height: 1.71;
+			  color: #4a4a4a;
+				background: #d8d8d8;
+				vertical-align: middle;
+				padding: 8px 16px;
+			}
+		}
+		tbody{
+			td{
+				font-size: 14px;
+			  line-height: 1.71;
+			  padding: 10px 16px;
+			  color: #4a4a4a;
+			  vertical-align: middle;
+			}
+			tr{
+		  	&:nth-child(2n){
+		  		td{
+		  			background: #fafafa;
+		  		}
+		  	}
+		  }
+		}
+	}
 	h2{
 		font-size: 32px;
 	  line-height: 1.25;
@@ -1067,9 +1177,112 @@ textarea.form-control{
   color: #4a4a4a;
   padding: 8px;
   text-transform: uppercase;
+  position: relative;
+
+  &:after{
+  	content: "+";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 10px;
+    line-height: 1;
+    font-size: 26px;
+    margin-top: -15px;
+  }
+  &.active{
+  	&:after{
+  		content: "-";
+  	}
+  }
 
   &_blue{
   	background: $blue;
   	color: #fff;
   }
+}
+.card{
+	margin-bottom: 35px;
+
+	&__img{
+		height: 320px;
+		text-align: center;
+		line-height: 320px;
+		box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+
+		img{
+			vertical-align: middle;
+			max-height: 320px;
+		}
+	}
+	&__descr{
+		color: #4a4a4a;
+
+		&__links{
+			margin-bottom: 30px;
+
+			a{
+				font-size: 14px;
+			  line-height: 1.71;
+			  color: #1c1c1c;
+			  text-decoration: underline;
+
+			  + a{
+			  	margin-left: 20px;
+			  }
+			}
+		}
+
+		&__title{
+			text-transform: uppercase;
+			font-size: 18px;
+			font-weight: 500;
+			margin-bottom: 15px;
+		}
+		&__table{
+			width: 100%;
+			margin-bottom: 25px;
+
+			td{
+				padding: 5px 0;
+				vertical-align: top;
+
+				&:first-child{
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}
+.cancel{
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 25px;
+	position: relative;
+	top: -1.5px;
+	background: url(../img/cancel-24.png)no-repeat;
+}
+.close{
+	width: 32px;
+	height: 32px;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	right: 15px;
+	top: 15px;
+	background: url(../img/closel-32.png)no-repeat;
+}
+.modal-title{
+	font-size: 32px;
+  line-height: 1.25;
+  text-align: center;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+.modal-btn{
+	text-align: center;
 }

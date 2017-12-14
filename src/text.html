@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Каталог numed</title>
+  <title>Текст</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300i,400,400i,500,700" rel="stylesheet">
@@ -15,59 +15,7 @@
 </head>
 <body>
   <div class="wrapper">
-    <header class="header header_blue">
-    	<div class="header-top">
-    		<div class="container">
-    			<div class="pull-left">
-    				<div class="dropdown-btn dropdown-toggle visible-xs">
-    					<div class="icon-bar middle"></div>
-    					<div class="middle">Меню</div>
-    				</div>
-    				<ul class="nav nav_blue clearfix">
-    					<li><a href="#">Главная</a></li>
-    					<li><a href="#">О компании</a></li>
-    					<li class="current"><a href="#">Каталог</a></li>
-    					<li><a href="#">Доставка</a></li>
-    					<li><a href="#">Оплата</a></li>
-    					<li><a href="#">Гарантии</a></li>
-    					<li><a href="#">Контакты</a></li>
-    				</ul>
-    			</div>
-    			<div class="pull-right">
-    				<div class="telephone middle">+7 (499) 500-44-99</div>
-    				<a href="#" class="btn btn-white-top btn-small btn-circle hidden-md">Онлайн заявка</a>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="mobile-order mobile-order_blue visible-md">
-    		<a href="#">
-    			<span class="middle">Онлайн заявка</span>
-    			<span class="count-order">2</span>
-    		</a>
-    	</div>
-    	<div class="header-bottom">
-    		<div class="container">
-    			<div class="pull-left">
-    				<div class="logo">
-    					<a href="#" class="middle">
-    						<img src="img/logotype-nu-med-color.png" alt="">
-    					</a>
-    					<span class="logo__descr middle">
-    						Поставки медицинских расходных <br> материалов из Германии
-    					</span>
-    				</div>
-    			</div>
-    			<div class="pull-right">
-    				<div class="search">
-    					<form action="">
-    						<input type="text" class="search-field" placeholder="Поиск">
-    						<button type="submit" class="search-btn search-btn_blue"></button>
-    					</form>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </header>
+    //= template/header-blue.html
     <div class="content">
       <div class="container">
         <ul class="breadcrumb clearfix">
@@ -82,6 +30,14 @@
         <div class="row">
           <div class="col-md-3">
             <div class="sidebar">
+              <ul class="sidebar__menu sidebar__menu_main sidebar__menu_blue">
+                <li>
+                  <a href="#">NuMED – кардиология</a>
+                </li>
+                <li>
+                  <a href="#" class="yellow-link">UROTECH – урология</a>
+                </li>
+              </ul>
               <div class="sidebar-btn sidebar-btn_blue dropdown-toggle visible-md">
                 Меню раздела «Урология»
               </div>
@@ -93,53 +49,13 @@
                   <a href="#">Как купить?</a>
                 </li>
                 <li>
-                  <a href="#" class="sidebar-toggle dropdown-toggle">Каталог продукции</a>
-                  <ul class="sidebar-dropdown">
-                    <li>
-                      <a href="#">Мочеточниковый стент</a>
-                    </li>
-                    <li>
-                      <a href="#">Мочеточниковый стент</a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
                   <a href="#">Прайс-лист</a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="col-md-9 page-text page-text_blue">
-            <h1 class="page-title">Каталог продукции NuMED</h1>
-            <div class="product product_blue clearfix">
-              <div class="row">
-                <div class="col-sm-4 product__item">
-                  <a href="#">
-                    <div class="product__img">
-                      <img src="http://via.placeholder.com/200x150" alt="">
-                    </div>
-                  </a>
-                  <div class="product__name">Ангиографические изделия для балонной вальвулопластики</div>
-                </div>
-                <div class="col-sm-4 product__item">
-                  <a href="#">
-                    <div class="product__img">
-                      <img src="http://via.placeholder.com/200x150" alt="">
-                    </div>
-                  </a>
-                  <div class="product__name">Ангиографические изделия для балонной вальвулопластики</div>
-                </div>
-                <div class="col-sm-4 product__item">
-                  <a href="#">
-                    <div class="product__img">
-                      <img src="http://via.placeholder.com/200x150" alt="">
-                    </div>
-                  </a>
-                  <div class="product__name">Ангиографические изделия для балонной вальвулопластики</div>
-                </div>
-              </div>
-            </div>
-            <h2>Поставки урологического оборудования UROTECH</h2>
+            <h1 class="page-title">Заголовок служебной страницы</h1>
             <p>
               Наша основная задача - создание благоприятных условий для оказания медицинской помощи российским гражданам на самом высоком технологическом уровне. ООО "Инвенкардио" предлагает отечественному рынку изделия ведущих мировых производителей: NuMed Canada INC, UROTECH GmbH.
             </p>
@@ -300,60 +216,7 @@
     </div>
   </div>
 
-  <footer class="footer">
-  	<div class="container">
-  		<div class="footer-top flex">
-  			<div class="footer__item">
-  				<div class="footer__title">ИНВЕНКАРДИО</div>
-  				<ul class="footer__menu">
-  					<li><a href="#">О компании</a></li>
-  					<li><a href="#">Каталог</a></li>
-  					<li><a href="#">Доставка</a></li>
-  					<li><a href="#">Оплата</a></li>
-  					<li><a href="#">Гарантии</a></li>
-  					<li><a href="#">Контакты</a></li>
-  				</ul>
-  			</div>
-  			<div class="footer__item">
-  				<div class="footer__title">NuMED</div>
-  				<ul class="footer__menu">
-  					<li><a href="#">О производителе</a></li>
-  					<li><a href="#">Поставки</a></li>
-  					<li><a href="#">Каталог</a></li>
-  					<li><a href="#">Сотрудничество</a></li>
-  				</ul>
-  			</div>
-  			<div class="footer__item">
-  				<div class="footer__title">UROTECH</div>
-  				<ul class="footer__menu">
-  					<li><a href="#">О производителе</a></li>
-  					<li><a href="#">Поставки</a></li>
-  					<li><a href="#">Каталог</a></li>
-  					<li><a href="#">Сотрудничество</a></li>
-  				</ul>
-  			</div>
-  			<div class="footer__item">
-  				<div class="footer__tel">
-  					+7 (499) 500-44-99
-  				</div>
-  				<div class="footer__adress">
-  					г. Москва, 2й Хорошевский проезд, дом 7, 2 подъезд, 5-й этаж, офисы 507, 514
-  				</div>
-  				<div class="footer__mail">
-  					info@invencardio.ru
-  				</div>
-  			</div>
-  		</div>
-  		<div class="footer-bottom clearfix">
-  			<div class="pull-left">
-  				2017 © ООО «ИНВЕНКАРДИО»
-  			</div>
-  			<div class="pull-right">
-  				Разработка сайта – WebSigma
-  			</div>
-  		</div>
-  	</div>
-  </footer>
+  //= template/footer.html
 
 
   <script src="js/vendor.js"></script>
