@@ -736,7 +736,9 @@ ul.bxslider {
 @media (min-width: 991px) {
   .modal-dialog {
     width: 800px;
-    margin: 30px auto; } }
+    margin: 30px auto; }
+    .modal-dialog_middle {
+      width: 650px; } }
 
 .fancybox-wrap,
 .fancybox-skin,
@@ -1988,6 +1990,8 @@ textarea.form-control {
   text-align: center;
   color: #4a4a4a;
   margin-bottom: 40px; }
+  .modal-title_succes {
+    margin-top: 40px; }
 
 .modal-btn {
   text-align: center; }

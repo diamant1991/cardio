@@ -1282,6 +1282,10 @@ textarea.form-control{
   text-align: center;
   color: #4a4a4a;
   margin-bottom: 40px;
+
+  &_succes{
+  	margin-top: 40px;
+  }
 }
 .modal-btn{
 	text-align: center;

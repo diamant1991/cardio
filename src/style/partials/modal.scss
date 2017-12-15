@@ -79,5 +79,9 @@
   .modal-dialog {
     width: 800px;
     margin: 30px auto;
+
+    &_middle{
+      width: 650px;
+    }
   }
 }
